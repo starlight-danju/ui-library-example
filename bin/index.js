@@ -24,6 +24,9 @@ initialDir.forEach((file) => {
         path.resolve("node_modules", "ui-lib-tester", "components", file),
         "utf-8"
     );
+
+    content = content.replace(/import React from \"react\"/g, `"use client";`);
+
     fs.writeFileSync(path.resolve(CWD, "components", file), content);
 });
 
