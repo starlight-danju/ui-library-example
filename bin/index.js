@@ -25,7 +25,7 @@ initialDir.forEach((file) => {
         "utf-8"
     );
 
-    content = content.replace(/import React from \"react\"/g, `"use client";`);
+    content = content.replace(/import React from \"react\"/g, `"use client"`);
 
     fs.writeFileSync(path.resolve(CWD, "components", file), content);
 });
