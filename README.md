@@ -11,5 +11,5 @@ npm i ui-lib-tester
 -   execute npx for building components
 
 ```bash
-npx ui-lib-action@latest
+npx ui-lib-tester@latest
 ```
